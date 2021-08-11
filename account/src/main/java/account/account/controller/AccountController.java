@@ -2,6 +2,7 @@ package account.account.controller;
 
 import account.account.domain.Account;
 import account.account.service.AccountService;
+import okhttp3.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -49,5 +50,13 @@ public class AccountController {
         accountService.invokeEndpointDeleteUser(id);
         return ResponseEntity.status(HttpStatus.ACCEPTED).body("User Deleted !");
     }
+
+    @GetMapping("/convert/{id}")
+    public ResponseEntity convertMethod(@PathVariable("id") Long id) throws IOException {
+        return ResponseEntity.status(HttpStatus.OK).body(accountService.fromJsonToUser(id));
+    }
+
+
+
 
 }

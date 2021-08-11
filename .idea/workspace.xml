@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a35169d-111f-4ed7-b2cb-63fb589444fb" name="Default Changelist" comment="">
+    <list default="true" id="5a35169d-111f-4ed7-b2cb-63fb589444fb" name="Default Changelist" comment="application comunication with okhttp">
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/account/account/domain/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gateway/src/main/java/gateway/gateway/pre/SimplePostFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />

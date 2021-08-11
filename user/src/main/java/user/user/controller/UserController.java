@@ -17,7 +17,7 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/hi")
-    public String hello(){
+    public String hello() {
         return "Hi from users";
     }
 
@@ -29,7 +29,7 @@ public class UserController {
     @GetMapping("/insert")
     public ResponseEntity save(@RequestParam(name = "firstname") String firstname,
                                @RequestParam(name = "lastname") String lastname) {
-        return ResponseEntity.status(HttpStatus.OK).body(userService.save(new User(firstname,lastname)));
+        return ResponseEntity.status(HttpStatus.OK).body(userService.save(new User(firstname, lastname)));
     }
 
     @PostMapping("/create")
@@ -43,6 +43,10 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.ACCEPTED).body("DELETED !");
     }
 
+    @GetMapping("/getbyid/{id}")
+    public ResponseEntity getUserById(@PathVariable("id") Long id) {
+        return ResponseEntity.status(HttpStatus.OK).body(userService.getUserById(id));
+    }
 
 
 }
